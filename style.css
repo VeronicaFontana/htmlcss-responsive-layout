@@ -22,6 +22,10 @@ header{
   border-radius: 10px;
 }
 
+.strategic-pl, .benefits, .get-started{
+  background-color: rgb(184, 128, 237);
+}
+
 /* HEADER */
 .top-bar{
   display: flex;
@@ -42,10 +46,6 @@ header{
 .demo-app .card{
   background-color: rgb(103, 165, 198);
   padding: 20px;
-}
-
-.strategic-pl, .benefits{
-  background-color: rgb(184, 128, 237);
 }
 
 .developement{
@@ -102,5 +102,26 @@ header{
   border: 1px solid rgb(220, 117, 134);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefits-title{
+  display: flex;
+  justify-content: center;
+}
+
+.about-us{
+  display: flex;
+}
+
+.about-us .card{
+  padding: 20px;
+  width: 100%;
+}
+
+.get-started .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
