@@ -125,3 +125,21 @@ header{
   align-items: center;
   justify-content: space-between;
 }
+
+/* FOOTER*/
+footer{
+  background-color: black;
+  color: white;
+}
+
+.bottom{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom div{
+  margin: 15px;
+}
+
