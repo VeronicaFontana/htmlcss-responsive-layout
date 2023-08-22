@@ -12,7 +12,7 @@ body{
 .container{
   border: 1px solid black;
   max-width: 1440px;
-  width: 98%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -22,7 +22,6 @@ header{
 
 .card{
   border: 1px solid blue;
-  height: 200px;
   margin: 10px 0;
   border-radius: 10px;
 }
@@ -43,9 +42,7 @@ header{
 }
 
 .menu{
-  color: white;
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .menu span, .menu button{
@@ -59,38 +56,109 @@ header{
 }
 
 .ham-menu{
-  display: none;
   color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 /* RESPONSIVE HEADER */
-@media screen and (max-width: 992px){
+@media screen and (min-width: 992px){
   .ham-menu{
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
+    display: none;
   }
 
   .menu{
-    display: none;
+    color: white;
+    display: flex;
+    align-items: center;
   }
 }
 
+
 /* MAIN */
+/* DEMO-SEC*/
 .row{
   display: flex;
   flex-direction: column;
 }
 
-.col{
-  width: 100%;
+.demo-sec .card{
+  background-color: #B5DDFF;
+  padding: 0 20px;
 }
 
-.demo-app .card{
-  background-color: rgb(103, 165, 198);
-  padding: 20px;
+.demo-txt{
+  margin: 20px 0;
 }
 
+.demo-sec .card span{
+  color: #0084FD;padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.demo-sec .card p{
+  color: #647A8D;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.demo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo button{
+  background-color: #0084FD;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.demo button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px gray;
+}
+
+.fa-apple{
+  padding: 0 10px;
+}
+
+.demo-img{
+  display: flex;
+  align-items: last baseline;
+}
+
+.demo img{
+  height: 400px;
+}
+
+/* RESPONSIVE DEMO-APP*/
+@media screen and (min-width: 576px){
+  .demo-sec .row{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .demo-sec .row:first-child .col:first-child{
+    width: 64%;
+  }
+
+  .demo-sec .row.row:first-child .col:last-child{
+    width: 34%;
+  }
+
+  .demo-sec .row:last-child .col{
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+/* STRATEGIC-PL */
 .developement{
   background-color: white;
   padding: 20px;
