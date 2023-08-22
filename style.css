@@ -455,23 +455,85 @@ header{
   }
 }
 
-
-
-
-
-
-
-
-
-.about-us{
+/* ABOUT US */
+.about-us .row{
   display: flex;
+  flex-direction: column;
 }
 
 .about-us .card{
   padding: 20px;
-  width: 100%;
 }
 
+.about-us .card span{
+  color: #9792E4;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-us .col:first-child .card p:first-of-type{
+  margin: 20px 0;
+}
+
+.about-us .col:first-child .card p{
+  font-size: 1.3rem;
+}
+
+.about-us img{
+  width: 210px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-us .col:last-child .card{
+  position: relative;
+}
+
+.about-us .fa-quote-left{
+  position: absolute;
+  left: 170px;
+  top: 5px;
+  color: #9792E4;
+  font-size: 4rem;
+}
+
+.about-us .col:last-child p{
+  color: #9792E4;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin: 20px 0;
+}
+
+.about-us button{
+  background-color: #9792E4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.fa-linkedin{
+  margin-right: 10px;
+}
+
+/* RESPONSIVE ABOUT US */
+@media screen and (min-width: 576px){
+  .about-us .row{
+    flex-direction: row;
+  }
+
+  .about-us .row .col:first-child{
+    width: 60%;
+  }
+
+  .about-us .row .col:last-child{
+    width: 40%;
+  }
+}
+
+/* GET STARTED */
 .get-started .card{
   display: flex;
   flex-direction: column;
