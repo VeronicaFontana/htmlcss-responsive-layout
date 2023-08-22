@@ -614,10 +614,9 @@ header{
   }
 }
 
-
 /* FOOTER*/
 footer{
-  background-color: black;
+  background-color: #333333;
   color: white;
 }
 
@@ -628,7 +627,13 @@ footer{
   align-items: center;
 }
 
-.bottom div{
-  margin: 15px;
+.bottom p:first-child{
+  margin: 25px 0;
+  text-align: center;
+}
+
+.bottom span, .bottom p span{
+  color: #9792E4;
+  text-decoration: underline;
 }
 
