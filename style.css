@@ -6,7 +6,6 @@
 
 body{
   font-family:'PT Sans', sans-serif;
-  font-size: 1.3rem;
 }
 
 .container{
@@ -27,7 +26,7 @@ header{
 }
 
 .strategic-pl, .benefits, .get-started{
-  background-color: rgb(184, 128, 237);
+  background-color: #9792E4;
 }
 
 /* HEADER */
@@ -199,18 +198,6 @@ header{
 }
 
 /* STRATEGIC-PL */
-.developement{
-  background-color: white;
-  padding: 20px;
-  justify-content: space-between;
-}
-
-.arrow{
-  border-radius: 50%;
-  background-color: rgb(184, 128, 237);
-  padding: 10px;
-}
-
 .developement, .planning{
   display: flex;
   flex-direction: column;
@@ -221,6 +208,92 @@ header{
   justify-content: space-evenly;
 }
 
+.strategic-pl img{
+  width: 100%;
+}
+
+.planning .text{
+  margin-top: 50px;
+  color: white;
+}
+
+.planning span{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.planning p{
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+
+.developement{
+  background-color: white;
+  padding: 20px;
+}
+
+.developement .text{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.developement .text span{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.developement .text p{
+  text-align: center;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.arrow{
+  border-radius: 50%;
+  background-color: #9792E4;
+  padding: 15px 20px;
+}
+
+.arrow:hover{
+  cursor: pointer;
+  box-shadow: 0 0 3px grey;
+}
+
+/* RESPONSIVE STRATEGIC */
+@media screen and (min-width: 576px) {
+  .planning span{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .planning span{
+    font-size: 2.5rem;
+  }
+
+  .strategic-pl .row{
+    flex-direction: row;
+    align-items:flex-end;
+  }
+
+  .strategic-pl .row .col:first-child{
+    width: 60%;
+  }
+
+  .strategic-pl .row .col:last-child{
+    width: 40%;
+  }
+}
+
+
+
+
+
+
+/* TESTIMONIALS */
 .testimonials{
   display: flex;
   flex-direction: column;
